@@ -1,0 +1,13 @@
+p There are {{posts.length}} kimchi dishes listed. EAT THEM ALL!!
+div(ng-repeat='post in posts')
+  div
+    div: h3 Dish Name: {{post.title}}
+    div: {{post.text}}
+  div.label.label-default Posted by: {{post.username}}
+  br
+  br
+  a.btn.btn-small(href='readPost/{{post.id}}') More
+  &nbsp;&nbsp;
+  a.btn.btn-small(href='editPost/{{post.id}}') Edit
+  &nbsp;&nbsp;
+  a.btn.btn-small(href='deletePost/{{post.id}}') Delete

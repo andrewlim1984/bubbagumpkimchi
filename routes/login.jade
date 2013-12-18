@@ -1,0 +1,20 @@
+extends layout
+block body
+    br
+    div.label.label-warning
+      h1 &nbsp; Bubba Gump Kimchi &nbsp;
+      p Log In
+        div User 
+          div: input(type='text',ng-model='user.email')
+        div Password 
+          div: input(type='password', ng-model='user.pass')
+          div: button(ng-click='update(user)')
+    script(src='https://cdn.firebase.com/v0/firebase.js')
+    script(src='https://cdn.firebase.com/v0/firebase-simple-login.js')
+    script(src='js/lib/angular/angular.js')
+    script(src='js/app.js')
+    script(src='js/services.js')
+    script(src='js/controllers.js')
+    script(src='js/filters.js')
+    script(src='js/directives.js')
+    script(src='http://code.jquery.com/jquery-1.10.1.min.js')

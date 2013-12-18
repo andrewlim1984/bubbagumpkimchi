@@ -1,0 +1,10 @@
+h2 {{post.title}}
+div {{post.text}}
+div {{post.username}}
+br
+p
+  | Are you sure you want to delete this post?
+  br
+  button.btn.btn-success(ng-click='deletePost()') Yes
+  &nbsp;&nbsp;
+  button.btn.btn-default(ng-click='home()') No Thanks
